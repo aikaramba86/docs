@@ -61,7 +61,8 @@
           "reference/package-pricing-modes",
           "reference/platform-console",
           "reference/editing-task-statuses"
-        ]
+        ],
+        "expanded": true
       },
       {
         "group": "Explanation",
