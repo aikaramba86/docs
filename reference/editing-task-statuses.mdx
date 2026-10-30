@@ -1,0 +1,66 @@
+---
+title: "Editing task statuses"
+description: "Every column on the editing board, what it means for the deliverable, and who may move a card where."
+---
+
+Every column on the editing board, what it means for the deliverable, and who may move a card where. The card and its deliverable are one thing: moving one moves the other.
+
+<Note>
+Last checked: 30 October 2026, Zorlo release 3. Only while Editing is switched on for the studio.
+</Note>
+
+## Columns
+
+| Column | Means | Deliverable status | Shown |
+| --- | --- | --- | --- |
+| To do | Nobody has begun | Not started | Always |
+| In progress | Being edited | In progress | Always |
+| Reviewing | Sent to the studio with a review link, waiting for approval | In progress (the booking shows In review) | Only while Review required is on |
+| Completed | Approved, ready to deliver | Ready | Always |
+| Waiting on client | Waiting for the song list or photo selection. Zorlo moves the card to To do when it arrives | Waiting on client | Hidden columns |
+| Delivered | Marked delivered or collected on the booking | Delivered or Collected | Hidden columns |
+
+A card is **parked**, and leaves the board, while its booking is moved back to Shot or is cancelled. It returns as it was when the booking is at Editing again or reopened.
+
+## Who may move a card
+
+"Assignee" means the editor (or staff member) the card is assigned to. "Staff" means owners and admins.
+
+| Move | Who | What happens |
+| --- | --- | --- |
+| To do to In progress | Assignee, staff | Started date set |
+| In progress to Reviewing | Assignee, staff | A review link is required. The booking's admin is emailed |
+| Reviewing to Completed (Approve) | Staff | Deliverable becomes Ready. The assignee is emailed |
+| Reviewing to In progress (Request changes) | Staff | A note is required and becomes a comment. The card shows "Changes requested" until it is sent again. The assignee is emailed |
+| In progress to Completed | Staff; the assignee only when Review required is off | As Approve. With review off, the booking's admin is emailed |
+| Completed to In progress | Staff; the assignee only when Review required is off | Deliverable back to In progress |
+| In progress to To do | Assignee, staff | Started date cleared |
+| Anything to Waiting on client or Delivered, and back | Zorlo only | Follows the deliverable on the booking |
+
+An editor cannot pull their own card back from Reviewing, and cannot move anyone else's card. Every other move is refused with a plain reason.
+
+Reordering within a column: anyone who could move the card out of it. The order is shared.
+
+## Priority
+
+| Priority | On the card |
+| --- | --- |
+| Urgent | "Urgent" in red at the top right |
+| Normal | Nothing. The default |
+| Low | A small icon, labelled "Low priority" for screen readers |
+
+Staff set it. Editors read it.
+
+## Due date
+
+A deliverable task's due date is the deliverable's (see [Deliverable statuses](/reference/deliverable-statuses)). Change it on the booking. An extra task has its own optional date. "No date yet" means the deliverable is waiting on the client or has no date.
+
+## Extra tasks
+
+A task that is not a deliverable ("Export 20 sneak peeks"). Staff add it to a booking at Editing, Delivered or Closed; it goes to the top of To do, has no type, and completing it changes nothing on the booking. Staff can edit its title, description and due date, and remove it. Editors cannot add tasks.
+
+## Related
+
+- [Deliverable statuses](/reference/deliverable-statuses)
+- [Roles](/reference/roles)
+- [Editing workspace](/how-to/editing-workspace)

@@ -1,0 +1,116 @@
+---
+title: "Payments"
+description: "Logging money against a booking: deposits, balances, and with Full payments on, add-ons, refunds, proof of payment and invoices."
+---
+
+Logging money against a booking. Every studio logs deposits and balances. With **Full payments** switched on for your studio you also log add-ons and refunds, attach proof of payment, record invoice numbers and see a Money page.
+
+<Note>
+Last checked: 30 October 2026, Zorlo release 2. Owners and admins log payments and attach proof and invoices. Only the owner corrects or removes a payment. Full payments is switched on per studio by Zorlo.
+</Note>
+
+## Log a deposit
+
+1. Open the booking.
+2. In the **Payments** section, click **Log payment**. (On a booking with no payments yet, the button sits inside the empty box.)
+3. Type is **Deposit**. The amount is filled in from the booking's deposit; change it if the client paid something else.
+4. Set the date paid and the method. Methods you have used before are suggested. PayNow, Bank transfer, Cash and Card are offered to begin with.
+5. Add a note if useful, for example a reference number.
+6. Click **Save payment**.
+
+**What happens next.** If the booking was an Enquiry or Quoted and has an event, it moves to **Confirmed**. The "Deposit not received" item disappears from Needs attention.
+
+## Log the balance
+
+1. Open the booking and click **Log payment** in the Payments section.
+2. Type is **Balance**. The amount is filled in with what is still outstanding.
+3. Set the date and method, then **Save payment**.
+
+![Logging a payment. With Full payments on, the form also takes a proof file.](/images/booking-log-payment.png)
+
+The "Balance of $X not received" item clears once the payments logged reach the agreed price.
+
+## See what is outstanding
+
+The line under the Payments heading reads "Received $X of $Y, $Z outstanding". It counts every payment logged, less any refund.
+
+## Change the deposit or balance due date
+
+Both sit in the booking's right-hand panel.
+
+- **Deposit** is the amount expected. Set it to 0 if no deposit is asked for, and Needs attention stops asking for one.
+- **Balance due** follows the main event's date (marked Auto). Click it to set another date. Click the cross to go back to following the event.
+
+## Confirm a booking without a deposit
+
+Only the owner. Open the booking and change **Status** to Confirmed in the right-hand panel. An admin cannot do this: they confirm by logging the deposit.
+
+## Correct a payment
+
+Only the owner.
+
+1. Open the booking and find the payment in the Payments section.
+2. Open its menu, change the amount, date, method or note and click **Save correction**.
+
+## Remove a payment
+
+Only the owner. Open the payment's menu and choose **Remove**. The booking's status does not change: a confirmed booking stays confirmed. A refund that offsets the payment has to be removed first.
+
+## Log an add-on payment
+
+With Full payments on. The client pays for something extra, for example a second highlight film.
+
+1. Click **Log payment** and choose the type **Add-on**.
+2. Say what it is for, enter the amount, the date and the method, and save.
+
+It counts as money received. If the extra also changes what the client owes in total, change the **Agreed price** in the right-hand panel too.
+
+## Log a refund
+
+With Full payments on. Refunds can be logged on bookings that go ahead, not only on cancellations.
+
+1. Click **Log payment** and choose the type **Refund**.
+2. Enter the **Amount refunded**, the **Date refunded**, the method and a **Reason**. The reason is required.
+3. Save.
+
+A refund cannot take the money received below zero. It shows as a line of its own, and "Received" counts it off. Cancelling a booking with the deposit **Refunded** logs one for you, with the reason "Booking cancelled".
+
+![Payments with Full payments on: a deposit, an add-on and a refund with its reason.](/images/booking-payments-full.png)
+
+## Attach proof of payment
+
+With Full payments on. A screenshot of the transfer or a receipt.
+
+1. Open the payment's menu and choose **Attach proof**.
+2. Choose a PNG, JPG, WebP or PDF of up to 10 MB.
+
+The row shows the proof. Open it from there; the link works for a minute and nobody outside the studio's staff can reach the file. **Replace proof** and **Remove** are in the same menu. Crew never see proof files.
+
+## Record an invoice
+
+With Full payments on. Zorlo does not make invoices: you make them in your invoicing tool and record the number here.
+
+1. Under Payments, find **Invoices** and click **Add invoice**.
+2. Enter the **Invoice number**. Optionally the **Amount**, the **Payment it covers** and the invoice **PDF**.
+3. Click **Save invoice**.
+
+A booking can have any number of invoices. The same number cannot be used twice on one booking, but can appear on two bookings (one invoice covering both). Invoices stay editable on lost and cancelled bookings, so a credit note can be recorded afterwards.
+
+![Two invoices on a booking, one marked as covering the deposit.](/images/booking-invoices.png)
+
+## The Money page
+
+With Full payments on. **Money** in the sidebar, for the owner and for admins when Money totals is switched on (Settings, Admin permissions).
+
+- **Still to collect**: what confirmed, shot, editing and delivered bookings still owe.
+- **Overdue**: the part of that past its balance due date.
+- **Owing the most**: the five bookings with the largest balance, each a link.
+- **Last 12 months**: per month, money received (less refunds) and new business booked. A booking counts as booked in the month it was confirmed, at its current agreed price.
+
+There are no profit figures: Zorlo does not know your costs.
+
+![The Money page.](/images/money-page.png)
+
+## Who sees money
+
+Owners and admins see each booking's price, payments, proof and invoices. Shooters never see any of it. Totals across bookings and the Money page are owner only until the owner switches on Money totals for admins.

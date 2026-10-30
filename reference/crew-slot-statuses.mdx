@@ -1,0 +1,48 @@
+---
+title: "Crew slot statuses"
+description: "The states a crew place on an event can be in, and what moves it between them."
+---
+
+Each event has crew places by role and level, for example 2 photographers and 1 videographer. A place is filled by putting a studio member on it. These are the states a place can be in.
+
+<Note>
+Last checked: 30 October 2026, Zorlo release 2.
+</Note>
+
+## The statuses
+
+| Status | Means | The shooter sees | Their calendar |
+| --- | --- | --- | --- |
+| Open | Nobody on it yet | Nothing | Free |
+| Offered | Someone has been asked and has not replied | The job under Requests, "Needs your response", with Confirm and Decline | Free. An offer does not block their time |
+| Confirmed | They said yes, or an admin confirmed for them | The job under Upcoming, "Confirmed" | Busy for the event's hours, in every studio they work with |
+| Declined | They said no | Nothing more | Free |
+| Reconfirm | They had confirmed, then the date or times changed | The job under Requests, "Details changed, please reconfirm", with the old date, times or venue struck through | Free again until they confirm |
+| Withdrawn | They had confirmed, then pulled out (or an admin took them off) | Nothing more | Free |
+
+## What moves a place
+
+| From | To | How |
+| --- | --- | --- |
+| Open | Offered | An admin chooses a person on the event's Crew panel. The person is emailed |
+| Offered | Confirmed | The person taps Confirm, or an admin confirms on their behalf |
+| Offered | Declined | The person taps Decline, with an optional reason. The assigned admin is emailed |
+| Offered | Open | An admin removes the offer |
+| Confirmed | Reconfirm | An admin changes the event's date, start or end time. The person is emailed with the old and new details |
+| Reconfirm | Confirmed | The person confirms again |
+| Reconfirm | Declined | The person declines |
+| Confirmed | Withdrawn | The person withdraws with a reason, or an admin takes them off. The place reopens and the assigned admin is emailed at once |
+| Any | Open | The event is cancelled. Everyone on it is emailed |
+
+## Rules
+
+- **Busy time starts at Confirmed.** Only a confirmed place blocks the shooter's time, and only then does another studio see them as busy. See [Why a shooter's calendar is only blocked on confirm](/explanation/calendar-blocked-on-confirm).
+- **A confirm that clashes is refused.** If the person is already busy at that time, the database refuses the confirmation.
+- **Late withdrawals are marked.** A withdrawal less than 48 hours before the event is recorded as late, for the studio's own record. Nothing else changes.
+- **Declined and withdrawn places count as unfilled** in Needs attention and in the crew count on the calendar.
+- **Venue or notes changes do not need reconfirmation.** Confirmed crew get an update email and stay confirmed. Only a change to the date, start or end time moves them to Reconfirm.
+- **Reminders.** An offer with no reply is reminded by email after the studio's reminder window (default 48 hours), once. If there is still no reply after the second window (default 24 hours), the assigned admin is flagged. An admin can also send a reminder by hand from Needs attention, at most once an hour per place.
+
+## Hourly rate on a place
+
+When a person is put on a place, their hourly rate for that role is copied onto the place. The studio can change it on that place without touching their profile. Shooters see their own estimated pay if the owner allows it (Studio settings, "Show estimated earnings to crew"). They never see anyone else's.

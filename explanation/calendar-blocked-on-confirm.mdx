@@ -1,0 +1,40 @@
+---
+title: "Why a shooter's calendar is only blocked on confirm"
+description: "Offering a shooter a place does not block their time. Only a confirmation does."
+---
+
+Offering a shooter a place does not block their time. Only a confirmation does. New users sometimes expect the opposite, so here is the reasoning.
+
+<Note>
+Last checked: 30 October 2026, Zorlo release 2.
+</Note>
+
+## An offer is a question
+
+When an admin puts someone on a place, Zorlo sends them an email and shows the job under Requests. Nothing is agreed yet. The person may be on holiday, may have a clash the studio cannot see, or may simply say no. If an offer blocked their calendar, the studio would be reserving a person who has not said yes, and a second studio asking the same person would be told "busy" on the strength of a question.
+
+So an offer leaves the person free. An admin can even offer the same person two events on the same day and let them pick.
+
+## A confirmation is a commitment
+
+When the person taps Confirm, or an admin confirms on their behalf after a phone call, Zorlo writes a busy block for the event's hours. From that moment every studio the person works with sees them as busy at that time, with no detail about which studio or which client. The date check and the crew picker use these blocks, with the studio's travel buffer added, to say who is free.
+
+If the person is already busy at that time, the database refuses the confirmation outright. The admin sees why and can pick someone else.
+
+## Why shooters can work for several studios
+
+Freelance shooters often do. Zorlo lets a person belong to several studios as a shooter, and each studio sees only its own jobs for them. The one thing that crosses the line is the busy block: start and end times only, nothing else. That is enough to avoid double booking and no more than the person would say themselves.
+
+Owners and admins cannot belong to more than one studio, for the reasons in [Why owners and admins belong to one studio](/explanation/one-studio).
+
+## What this means for reconfirmation
+
+When an admin changes an event's date or time, a confirmed shooter's commitment no longer matches what they agreed to. Zorlo treats it as a fresh question: the place moves to Reconfirm, the busy block is removed, and the person is emailed the old and new details. Their time is free again until they confirm. Changing only the venue or the notes is not a new question, so confirmed crew just get an update.
+
+## What this means for unavailable dates
+
+A shooter's "Dates I can't work" are also busy blocks, owned by the person rather than a studio. Every studio they work with sees those days as busy. Studios cannot add or remove them.
+
+## The one exception
+
+An admin can confirm a place on a shooter's behalf, which creates the busy block without the shooter tapping anything. This exists because many studios still arrange crew by phone and WhatsApp and only want Zorlo to record the outcome. It is still a confirmation, not an offer, so use it only when the person has actually agreed.

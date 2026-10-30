@@ -1,0 +1,76 @@
+---
+title: "Deliverables"
+description: "What the booking hands over after the shoot, tracked with a status, a due date and the person working on it."
+---
+
+What the booking hands over after the shoot: the photo gallery, the album, the films. Each one is tracked on the booking with a status, a due date and, if you like, the person working on it.
+
+<Note>
+Last checked: 30 October 2026, Zorlo release 2. Owners and admins. Deliverables is a booking section (Settings, Booking sections), on unless the owner switches it off. Crew never see deliverables.
+</Note>
+
+## Set up your deliverable types
+
+Owner, or admins with Lists. Settings, **Deliverable types**. One type per thing you deliver, for example Photo gallery, Album, Frames, Full summary film, Highlight film, Teaser.
+
+1. Click **Add deliverable type**.
+2. **Name** it.
+3. **Waits on**: **Nothing** for things you can start straight after the shoot, **Song list** for films, **Photo selection** for an album or frames the client picks photos for.
+4. For a film, choose which **Film** it is: Full summary, Highlight or Teaser. This is how the song list knows which films to ask about.
+5. **Usual turnaround** in days. Leave it empty to use the studio's default (Settings, Studio, **Default delivery turnaround**, 120 days).
+
+Then add the types to your packages: Settings, Packages, under **Deliverables**, each with a quantity and whether it is **Complimentary**. A booking made from the package gets them.
+
+## Add a deliverable to a booking
+
+Most arrive with the package. To add one by hand, click **+** next to **Deliverables** on the booking (or **Add deliverable** when the list is empty), choose the **Type** and **Quantity**, and optionally who it is **Assigned to**, a **Due date** and a **Delivery link**. Leave **Use the usual date** ticked and the due date follows the booking.
+
+## How due dates work
+
+- A deliverable that waits on nothing is due its turnaround after the booking's main event.
+- A film waits on the song list, an album or frames wait on the photo selection. They show **Waiting on song list** or **Waiting on photo selection** with no date. The day the input arrives, the clock starts: due that day plus the turnaround.
+- Moving the main event moves every due date you have not set by hand. A date set by hand stays.
+- Each row says how long is left, for example "Due 14 Feb · in 32 days", and turns red when overdue.
+
+## Move a deliverable along
+
+Open the row's **...** menu and choose the next step. Each item is one of:
+
+| Status | Means |
+| --- | --- |
+| Not started | Nobody has begun |
+| Waiting on client | Waiting for the song list or photo selection. Leaves this status only when the input arrives |
+| In progress | Being edited |
+| Ready | Finished, waiting to be sent or collected |
+| Delivered | Sent to the client. Zorlo asks for the delivery link |
+| Collected | Picked up. Physical items only |
+
+**Edit** changes the type, quantity, assignee, due date and link. **Remove** takes the item off the booking, with Undo for a few seconds.
+
+![Deliverables on a booking at Editing: one overdue, one waiting on the song list, one collected.](/images/booking-deliverables.png)
+
+## Mark the song list or photo selection received
+
+- **Song list**: enter the songs on the booking (or let the client's song list form arrive) and every film waiting on it starts.
+- **Photo selection**: the banner "Waiting on photo selection · album and frames start when it arrives" has a **Mark received** button. Zorlo cannot tell when the client has chosen their photos, so you say.
+
+## With the editing workspace on
+
+When the platform has switched Editing on for the studio, every deliverable of a booking at Editing is also a card on the editing board. The row shows **In review** while the editor's work waits for approval, **View on board** opens the card, the assignee menu lists editors with their open task counts, and "All edits completed" appears once every card is done. Approving a card on the board sets the item to Ready; marking it Delivered here moves the card off the board. See [Editing workspace](/how-to/editing-workspace).
+
+## Tell the client
+
+With message templates on, **Copy message** at the top of the booking fills the Delivery template with every delivery link on the booking.
+
+## What Zorlo watches for you
+
+Needs attention shows, for the booking's assigned admin: an item **overdue** (Urgent), **due soon** (within 14 days), **ready to deliver** (a digital item at Ready), **ready, not collected** (a physical item at Ready for 7 days), and **Song list not received** or **Photo selection not received** once the studio's reminder windows pass. The booking's own status (Shot, Editing, Delivered) never changes on its own: you set it.
+
+## Changing or cancelling the booking
+
+Changing the package lists the deliverables it would add or remove, and you tick what to apply. Items you added by hand are left unticked so they are not removed by accident. Cancelling a booking locks its deliverables until it is reopened.
+
+## Related
+
+- [Needs attention rules](/reference/needs-attention-rules)
+- [Studio settings](/reference/studio-settings)

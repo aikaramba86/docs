@@ -1,0 +1,56 @@
+---
+title: "Booking statuses"
+description: "Every status a booking can have, and what moves it from one to the next."
+---
+
+Every status a booking can have, and what moves it from one to the next.
+
+<Note>
+Last checked: 30 October 2026, Zorlo release 2.
+</Note>
+
+## The pipeline
+
+| Status | Means | Set by |
+| --- | --- | --- |
+| Enquiry | Someone asked. Nothing agreed yet | A new booking starts here unless you choose otherwise |
+| Quoted | You sent a price | By hand |
+| Confirmed | The deposit is in. The date is theirs | Logging a deposit, or by hand (see below) |
+| Shot | Every event is done | By hand |
+| Editing | Photos and films are being worked on | By hand |
+| Delivered | The client has everything | By hand |
+| Closed | Finished and filed | By hand |
+
+Two statuses sit outside the pipeline:
+
+| Status | Means | Set by |
+| --- | --- | --- |
+| Lost | An enquiry or quote that never confirmed | Mark as lost, with a reason from the studio's list |
+| Cancelled | A confirmed booking that was called off | Cancel booking, with a reason and a deposit outcome |
+
+## Rules
+
+- **Logging a deposit confirms the booking.** A deposit logged on an enquiry or quote that has at least one event moves it to Confirmed.
+- **Only the owner confirms without a deposit.** An admin cannot set Confirmed by hand on an enquiry or quote. The owner can, for example when the deposit is waived. A deposit of 0 on the booking means none is asked for.
+- **Shot and later follow Confirmed.** From Enquiry or Quoted you can move only to Enquiry, Quoted or Confirmed. Nothing skips Confirmed.
+- **A confirmed booking needs an event.** You cannot create a booking as Confirmed with no events.
+- **Deliverables never move the status.** Delivering the last gallery does not set Delivered; you do. The deliverables have their own statuses, in [Deliverable statuses](/reference/deliverable-statuses).
+- **Only a confirmed booking can be cancelled.** An enquiry or quote is marked lost instead.
+- **Lost keeps everything.** A lost enquiry stays searchable under Enquiries, Lost, and can be reopened.
+- **Cancelled keeps the records.** Payments already logged stay. Every event still to come is cancelled, crew places are released and the crew are emailed. A refund is logged as a payment of type refund.
+- **Reopening a cancelled booking** puts it back on the status it had and schedules its events again. Crew places stay open and nobody is emailed. You offer the places again.
+
+## Where each status shows
+
+| List | Shows |
+| --- | --- |
+| Bookings, Upcoming | Any booking except lost and cancelled with an event still to come, plus enquiries, quotes and confirmed bookings with no event yet |
+| Bookings, Past | Any booking except lost and cancelled whose last event has passed |
+| Bookings, All | Every booking, cancelled ones included, with a Status filter |
+| Enquiries | Enquiry and Quoted |
+| Enquiries, Lost | Lost |
+
+## Related
+
+- [Crew slot statuses](/reference/crew-slot-statuses) for the crew places on each event.
+- [Needs attention rules](/reference/needs-attention-rules) for what each status triggers.

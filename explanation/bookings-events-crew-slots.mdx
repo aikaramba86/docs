@@ -1,0 +1,44 @@
+---
+title: "Bookings, events and crew slots"
+description: "Zorlo keeps three ideas apart that a spreadsheet tends to mix together: the booking, its events and the crew places on each event."
+---
+
+Zorlo keeps three ideas apart that a spreadsheet tends to mix together: the booking, its events and the crew places on each event. Once the split is clear, most of the app's behaviour follows from it.
+
+<Note>
+Last checked: 30 October 2026, Zorlo release 2.
+</Note>
+
+## A booking is the engagement
+
+A booking is one client engagement: the couple or company, the package they chose, the price, the deposit and balance, the notes, the brief and the deliverables. It has one status that tells you where the engagement stands, from Enquiry through Confirmed to Closed. It has one assigned admin who is responsible for it end to end.
+
+Money lives here. A wedding with three events still has one price and one deposit, so payments are logged against the booking, not against an event.
+
+## An event is a day's work
+
+A wedding is rarely one event. A Malay wedding might have a henna night, a Nikah and a reception on different days, at different venues, with different crew. So a booking holds one or more events, and each event has its own date, times, venue, crew and notes for crew. One event is marked as the main event: the balance is due on its date.
+
+Events are what the calendar shows, what crew are offered and what the date check looks at. A booking is what the lists, the pipeline and the payments work on. That is why the schedule shows "Reception, Nur Iman & Faizal Rahim" rather than the booking as a whole.
+
+## A crew place is one seat on one event
+
+Each event needs a certain crew: say two photographers and one videographer, with a lead among them. Zorlo represents that as crew places, one per seat, each with a role and an optional level. A place is filled by putting a studio member on it. The place then carries its own status (offered, confirmed and so on) and its own hourly rate, copied from the person's profile at the moment they were put on it.
+
+Because places are per event, the same person can be a lead photographer at the Nikah and not be needed at the reception. Because they are per seat, "2 of 4 confirmed" on the calendar means exactly that.
+
+## Why packages copy rather than link
+
+When you create a booking from a package, Zorlo copies the package's events, crew needs and price onto the booking. The booking does not point back at the package. If you later change the package in Settings, nothing happens to existing bookings, which is what you want: a wedding sold last year at last year's price with last year's crew plan stays as sold. The agreed price on the booking is always editable for the same reason. Published prices are starting points.
+
+## What this means day to day
+
+- Changing a booking's date means changing its events' dates, one by one, and each change asks that event's confirmed crew to reconfirm.
+- Cancelling a booking cancels every event still to come and releases every place on them. Cancelling one event leaves the booking alone.
+- A shooter sees the events they are on and the booking's brief, never the booking's money.
+- The Needs attention panel mixes both: crew problems are per event, money problems are per booking.
+
+## Related
+
+- [Booking statuses](/reference/booking-statuses)
+- [Crew slot statuses](/reference/crew-slot-statuses)

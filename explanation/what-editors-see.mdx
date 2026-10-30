@@ -1,0 +1,59 @@
+---
+title: "What editors can and cannot see"
+description: "Editors see everything they need to cut a film or finish an album, and nothing about the money or the client's contact details."
+---
+
+Editors see everything they need to cut a film or finish an album, and nothing about the money or the client's contact details. This page says where the line is and how Zorlo holds it.
+
+<Note>
+Last checked: 30 October 2026, Zorlo release 3.
+</Note>
+
+## What an editor sees
+
+The whole editing board of their studio: every card, not only their own. For each card:
+
+- The task, its status, priority, due date, review link, the studio's notes for the editor, comments and activity.
+- The couple's names and the booking number, and the name of the booking's admin.
+- The full song list: every film's songs in order, and the couple's names for video. Shooters never see this; editors need it.
+- The coverage brief: must-capture moments, important people, reference links, special notes and run sheet.
+- The group shots list, on photo tasks.
+- The booking's events with their type, date and venue name, and the main event marked. No address, no crew, no call times.
+- Files of kind reference, family combinations and run sheet, through short-lived links.
+- The booking's other deliverables and where each one stands.
+
+They also see the studio's editing activity and their own inbox, and their own profile.
+
+## What an editor never sees
+
+- Prices, deposits, payments, invoices or any money.
+- The client's phone, email, social handles or address, and the booking's contact persons.
+- Crew names, rates and fees, call times and venue addresses.
+- Client meetings, enquiry notes, the dated notes on the booking, internal notes on events, vendors.
+- Seating plans, invoices, payment proofs and files the client sent through a form, other than the kinds above.
+- Any booking, client, schedule, crew, money or settings page. Typing the address gives "This page isn't available".
+- Anything about a studio they are not an editor for.
+
+## Why the line is there
+
+Editors are often freelance and work for several studios. Prices and crew fees are the studio's business; the client's phone number is the admin's to use. What an editor needs is the creative material, and giving them all of it, including the whole song list, means the admin never has to forward a brief by WhatsApp again.
+
+## How it is enforced
+
+Not by hiding buttons. The database decides what an editor can read. An editor's account has no access to the bookings, clients, payments or events tables at all. The board and each task come through two narrow views that return only the fields listed above, for the studio's tasks, and leave out every money and contact field. Even a different screen, or the app's connection used directly, would get nothing more.
+
+Changes go the same way: an editor can claim an unassigned card, give it back, move their own card between To do, In progress and Reviewing, add a review link and comment. Every other change, including moving someone else's card or approving their own, is refused by the database whatever screen asks for it.
+
+Owners and admins who open the board keep their full rights there: the Editing workspace is a different screen, not a different permission.
+
+## What this means when writing a booking
+
+- Put what the editor should know in **Notes for the editor** on the task, or in the brief, the song list and the group shots.
+- Attach reference material as files of kind **Reference**, **Family combinations** or **Run sheet**. Other kinds stay with the staff.
+- Keep client contact details and money out of the brief's free text, since the brief is shown to crew and editors.
+
+## Related
+
+- [What shooters can and cannot see](/explanation/what-shooters-see)
+- [Roles](/reference/roles)
+- [For editors](/how-to/for-editors)

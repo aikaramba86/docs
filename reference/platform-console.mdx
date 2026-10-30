@@ -1,0 +1,49 @@
+---
+title: "Platform console"
+description: "For the platform admin only: the people who run Zorlo itself."
+---
+
+For the platform admin only: the people who run Zorlo itself. The console lives at /console and is separate from any studio.
+
+<Note>
+Last checked: 30 October 2026, Zorlo release 2.
+</Note>
+
+## What it does
+
+| Page | Holds |
+| --- | --- |
+| Studios | Every studio on the platform with its owner, member count, access state and when it was created |
+| Studio detail | The studio's members and roles, its access state, which booking sections and features it may use, and the platform audit log for it |
+| Invitations | Studio owners who have been invited and have not yet accepted |
+
+## Studio access
+
+| State | Members can | Zorlo does |
+| --- | --- | --- |
+| Active | Everything their role allows | Normal |
+| Read only | Read everything their role allows. Every save is refused with a clear message | Skips the studio for crew reminders and the morning digest |
+| Suspended | Nothing. They see a suspended page | Nothing |
+
+## Booking sections
+
+For each studio the platform admin allows or blocks each optional booking section: Song list, Group shots, Vendors, Coverage brief, Files, Client meetings, Deliverables. A section shows in the studio only when the platform allows it and the studio's owner has it switched on in Settings, Booking sections. Both are on to begin with. See [Admin permissions and booking sections](/explanation/admin-permissions-and-sections).
+
+## Features switched on per studio
+
+These have no owner switch. They are off for every new studio until the platform admin switches them on.
+
+| Switch | Turns on |
+| --- | --- |
+| Client forms | Tokenised form links on bookings (booking details, coverage brief, song list), the Client forms settings, and the brief, song list and changes-to-check attention items. Off, links already sent stop working |
+| Message templates | The Messages page, templates and Copy message on bookings and Needs attention |
+| Full payments | Add-on and refund payments, proof of payment, invoices and the Money page. Off, payments work as in release 1 |
+| Editing (Premium) | The editor role and the editing board: cards for every deliverable of a booking at Editing, review and approval, the Overview, Updates and inbox, and the Editing settings. Needs Deliverables allowed and on; Deliverables cannot be blocked while Editing is on. Off, editors who already have accounts see "Nothing here yet" and the data stays. See [Editing workspace](/how-to/editing-workspace) |
+
+## What the platform admin cannot see
+
+Bookings, clients, crew details, prices, payments, briefs or any studio content. The console reads only studios, their members and the platform audit log. Every action in the console is written to that log.
+
+## Becoming a platform admin
+
+Only from the server, with the command the engineering notes describe. There is no screen for it. A platform admin signs in with a password and two-factor authentication like an owner.

@@ -1,0 +1,40 @@
+---
+title: "How the attention panel decides what to show"
+description: "Needs attention is the home screen, and it is often empty. That is by design."
+---
+
+Needs attention is the home screen, and it is often empty. That is by design. This page explains the thinking so the panel's behaviour makes sense.
+
+<Note>
+Last checked: 30 October 2026, Zorlo release 2.
+</Note>
+
+## It is a to-do list nobody writes
+
+Most studio to-do lists are written by hand: chase this couple, find a second shooter for Saturday, remind someone to pay. They go stale because the facts move on and the list does not. Zorlo's panel is not written by anyone. Every time it loads, it looks at the bookings and events as they are right now and works out what needs a person. Fix the problem, and the item is gone the next time you look. There is no tick box because there is nothing to tick.
+
+That also means the panel can never be wrong about what has already been done. If a deposit is logged, "Deposit not received" cannot still be showing.
+
+## Only things a person must act on
+
+The panel does not list everything happening this week. A fully crewed event next Saturday is not on it. A booking with the deposit paid is not on it. Items appear only when something is missing, late or broken and a person has to act: fill a place, chase a reply, log a payment, add a venue. An empty panel means the studio is in order, which is useful information in itself.
+
+## Most urgent first, with one button
+
+Each item has a priority. **Urgent** means an event within 7 days, money overdue, a withdrawal or a reconfirmation. **Soon** is everything else worth doing this week. Urgent items come first, then by date. Each item has one button that goes straight to the fix, because the point is to act, not to read.
+
+The urgent items are also emailed every morning at 8am, so the day starts with the same list in the inbox. There is no email on days with nothing urgent.
+
+## Items go to the person responsible
+
+Every booking has an assigned admin. That admin sees the booking's items. The owner sees everything. An admin can switch to see everyone's items, their own first, for covering a colleague. Items about a person's own crew places, for staff who shoot, are shown only to that person.
+
+## Rules, not judgement
+
+The rules are fixed code with the studio's settings plugged in: the flag window for unfilled crew, the reminder hours, the follow-up days. Nothing is left to an AI or to a guess. Two admins looking at the same studio at the same moment see the same list. The complete list of rules and windows is in [Needs attention rules](/reference/needs-attention-rules).
+
+## Where the limits are
+
+- The panel only knows what is in Zorlo. If a client paid and nobody logged it, "Deposit not received" stays until someone does.
+- A follow-up date in the future silences the enquiry until then. That is a choice, not an oversight: it lets an admin say "they will reply after the family meeting" and be reminded then.
+- The panel knows about crew, event details, money, enquiries, client forms and deliverables. Rules about crew hours and payouts arrive with those features.

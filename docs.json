@@ -1,54 +1,94 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Zorlo",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#2447D6",
+    "light": "#3D63EE",
+    "dark": "#2447D6"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/zorlo.svg",
   "navigation": {
     "pages": [
       {
-        "group": "Getting Started",
+        "group": "Start here",
         "pages": [
-          "index",
-          "quickstart"
+          "index"
+        ],
+        "icon": "compass"
+      },
+      {
+        "group": "Tutorials",
+        "icon": "graduation-cap",
+        "pages": [
+          "tutorials/set-up-your-studio",
+          "tutorials/first-booking",
+          "tutorials/first-job"
+        ]
+      },
+      {
+        "group": "How-to guides",
+        "icon": "wrench",
+        "pages": [
+          "how-to/getting-in",
+          "how-to/enquiries",
+          "how-to/bookings",
+          "how-to/client-forms",
+          "how-to/crew",
+          "how-to/schedule",
+          "how-to/clients",
+          "how-to/payments",
+          "how-to/deliverables",
+          "how-to/messages",
+          "how-to/needs-attention",
+          "how-to/for-shooters",
+          "how-to/settings",
+          "how-to/editing-workspace",
+          "how-to/for-editors"
+        ]
+      },
+      {
+        "group": "Reference",
+        "icon": "list",
+        "pages": [
+          "reference/roles",
+          "reference/booking-statuses",
+          "reference/crew-slot-statuses",
+          "reference/deliverable-statuses",
+          "reference/needs-attention-rules",
+          "reference/studio-settings",
+          "reference/emails",
+          "reference/package-pricing-modes",
+          "reference/platform-console",
+          "reference/editing-task-statuses"
+        ]
+      },
+      {
+        "group": "Explanation",
+        "icon": "lightbulb",
+        "pages": [
+          "explanation/bookings-events-crew-slots",
+          "explanation/calendar-blocked-on-confirm",
+          "explanation/what-shooters-see",
+          "explanation/one-studio",
+          "explanation/attention-panel",
+          "explanation/admin-permissions-and-sections",
+          "explanation/what-editors-see"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/zorlo.svg",
+    "dark": "/logo/zorlo.svg"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:support@mintlify.com"
+        "href": "https://app.zorlo.io",
+        "label": "Open Zorlo"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
-    }
+    ]
   },
   "contextual": {
     "options": [
@@ -68,5 +108,10 @@
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
+  },
+  "description": "User guide for Zorlo, the studio management app for photography and videography studios.",
+  "appearance": {
+    "default": "dark",
+    "strict": false
   }
 }

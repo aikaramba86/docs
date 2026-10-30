@@ -1,0 +1,57 @@
+---
+title: "What shooters can and cannot see"
+description: "Shooters see what they need to do the job well, and nothing about the business behind it."
+---
+
+Shooters see what they need to do the job well, and nothing about the business behind it. This page explains where the line is and how Zorlo holds it.
+
+<Note>
+Last checked: 30 October 2026, Zorlo release 2.
+</Note>
+
+## What a shooter sees
+
+Only the events they have been offered or hold a place on. For each of those:
+
+- The event's date, times, venue and address, and their call time.
+- The notes the admin wrote for crew.
+- The booking's brief: must-capture moments, important people, reference links, special notes and run sheet.
+- The group shots list and the vendors on the day, if the studio uses those sections.
+- The couple's names, the contact persons for the day with their numbers, and the coordinator's WhatsApp.
+- The other crew on the event, with their names, roles and levels.
+- Their own estimated pay and hourly rate, if the studio shows it.
+- Files attached to the booking, through short-lived links.
+
+They also see their own profile and the dates they have marked unavailable.
+
+## What a shooter never sees
+
+- The booking's price, deposit, balance or payments.
+- Other crew members' rates or pay.
+- Internal notes on the event, and the dated notes on the booking.
+- The song list and the song list document.
+- Client meetings.
+- Deliverables, invoices, client form links and message templates.
+- Other bookings, other events, the client list, the crew list or any settings.
+- Anything about a studio they are not a member of, beyond the fact that they are busy at certain times.
+
+## Why the line is there
+
+Crew fees and client prices are the studio's business. A shooter who can compare their rate with a colleague's, or their fee with the client's price, has information the studio did not choose to share. Internal notes exist precisely so admins can write things crew should not read. Keeping these out of the shooter's view by design means an admin never has to remember to hide them.
+
+## How it is enforced
+
+Not by hiding buttons. The database itself decides what a shooter can read. A shooter's account has no access to the bookings, payments or clients tables at all. Their jobs come through two narrow views that return only the fields listed above, for events they hold a place on. Even if someone built a different screen, or used the app's connection directly, the database would return nothing more. The same is true in the other direction: a shooter cannot change a place's status except through the confirm, decline and withdraw actions, which check it is their own place.
+
+Owners and admins who also shoot see the full studio in the studio view, and their own jobs in the job view. The job view hides nothing from them that the studio view shows; it is a different screen, not a different permission.
+
+## What this means when writing a booking
+
+- Put anything crew must know in **Notes for crew** on the event, or in the brief.
+- Put anything crew must not know in **Internal notes** on the event, or in the booking's **Notes**.
+- Sections with the crossed-out Crew badge are hidden from crew. Sections with the eye are shown.
+
+## Related
+
+- [Roles](/reference/roles)
+- [What editors can and cannot see](/explanation/what-editors-see)

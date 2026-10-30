@@ -1,0 +1,52 @@
+---
+title: "Admin permissions and booking sections"
+description: "Two sets of switches shape what a studio's people see: what admins may change, and which parts of a booking the studio uses."
+---
+
+Two sets of switches shape what a studio's people see: what admins may change, and which parts of a booking the studio uses. They look similar and are easy to confuse. Here is what each is for.
+
+<Note>
+Last checked: 30 October 2026, Zorlo release 2.
+</Note>
+
+## Admin permissions: how much the owner delegates
+
+Every admin can run bookings, offer crew and log payments. That is the job. Beyond it, studios differ: in one the owner sets every price and every rate personally; in another the admins run the whole studio and the owner looks at totals. Rather than inventing a role for every pattern, Zorlo has one admin role and a small set of switches that open more to it:
+
+- Packages and add-ons
+- Lists (event types, lost reasons, vendor types, crew roles and levels)
+- Studio settings (not the studio name)
+- Crew pay (roles, levels and rates on profiles, not anyone's studio role)
+- Money totals
+
+Each switch applies to every admin at once. There are no per-person permissions, because studios of this size do not need them and the owner should be able to answer "what can my admins do?" in one glance.
+
+Some things never open to admins: the switches themselves, studio roles, removing people, renaming the studio, correcting payments, and confirming a booking without a deposit. Those are the owner's.
+
+The switches are checked in the database on every save, not only on the screen. Hiding a page is not a permission in Zorlo; the database refuses the write.
+
+## Booking sections: which parts of a booking the studio uses
+
+A booking can carry a song list, group shots, vendors, a coverage brief, files, client meetings and deliverables. Not every studio wants all of them. A corporate studio has no song list; a small studio may keep its brief in WhatsApp. Booking sections let the owner switch each part off for the whole studio.
+
+Off means: the section disappears from every booking, nothing can be saved to it, and crew do not see it on their job page. Nothing is deleted. Switch it back on and the data is where it was.
+
+## Why there are two layers for sections
+
+Each section also has a switch on Zorlo's side, in the platform console. The studio sees a section only when the platform allows it and the owner has it on. The platform layer exists so that a section can be introduced to one studio at a time, or withheld from a studio that has not asked for it, without touching the studio's own settings. For most studios every section is allowed and the owner's switches are the only ones that matter.
+
+Three features have only the platform switch and no owner switch: client forms, message templates and full payments (proof, add-ons, refunds, invoices and the Money page). Zorlo switches each on for a studio that wants it. Until then the feature is simply absent from the studio's screens.
+
+## Telling them apart
+
+|  | Admin permissions | Booking sections |
+| --- | --- | --- |
+| Answers | What may admins change? | Which parts of a booking do we use? |
+| Affects | Admins only | Everyone, crew included |
+| Where | Settings, Admin permissions | Settings, Booking sections |
+| Default | All off | All on (where the platform allows) |
+
+## Related
+
+- [Roles](/reference/roles)
+- [Platform console](/reference/platform-console)

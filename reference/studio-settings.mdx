@@ -1,0 +1,105 @@
+---
+title: "Studio settings"
+description: "Every studio setting, what it does and its default."
+---
+
+Every studio setting, what it does and its default. Settings, Studio. The owner changes them, or an admin when the owner has opened Studio settings (see [Roles](/reference/roles)).
+
+<Note>
+Last checked: 30 October 2026, Zorlo release 2.
+</Note>
+
+## Studio
+
+| Setting | What it does | Default | Range |
+| --- | --- | --- | --- |
+| Studio name | Shown in the sidebar, on invitations, in crew emails and on client forms | Set at invitation | Up to 120 characters. Owner only |
+| Logo | Shown in the sidebar and on client forms | None |  |
+| Deposit | The suggested deposit on new bookings, as a percentage of the agreed price. You can change the amount on any booking. The balance is due on the date of the booking's main event, also changeable per booking | 30% | 0 to 100 |
+
+## Enquiries
+
+| Setting | What it does | Default | Range |
+| --- | --- | --- | --- |
+| Follow up enquiries after | An enquiry with no notes or changes for this long is flagged in Needs attention | 3 days | 1 to 90 |
+
+## Crew
+
+| Setting | What it does | Default | Range |
+| --- | --- | --- | --- |
+| Crew call time | How long before the event starts crew should arrive. Shown to crew as their start time on jobs and in emails | 20 minutes | 0 to 600 |
+| Pay crew for call time | On: the pay estimate runs from the call time. Off: it starts when the event starts. Crew see this in their estimate | On |  |
+| Show estimated earnings to crew | On: crew see their estimated pay and hourly rate on offers and jobs. Off: both are hidden. Final pay is not affected | On | Owner only |
+| Travel time between events | The gap one person needs between two events before Zorlo counts it as a clash | 45 minutes | 0 to 600 |
+
+## Crew replies
+
+| Setting | What it does | Default | Range |
+| --- | --- | --- | --- |
+| Flag unfilled crew | An event this close with an open crew place is flagged as Soon. Within 7 days it is Urgent regardless | 15 days | 1 to 365 |
+| Remind crew after | An offer with no reply gets a reminder email after this long, once | 48 hours | 1 to 720 |
+| Then flag the admin after | If there is still no reply this long after the reminder, the booking's admin is flagged | 24 hours | 1 to 720 |
+
+## Client forms
+
+Shown only while Client forms is switched on for the studio.
+
+| Setting | What it does | Default | Range |
+| --- | --- | --- | --- |
+| Form links work for | How long a new client form link keeps working | 30 days | 1 to 90 |
+| Flag a missing brief | A confirmed booking with no coverage brief this close to its main event is flagged | 14 days | 1 to 60 |
+| Flag a missing song list | Once a song list link has been sent, a booking with no songs this long after its main event is flagged | 7 days | 1 to 60 |
+| Intro and thank-you text, per form | Shown at the top of the form and after the client sends it. Empty uses Zorlo's starter text, shown in grey | Starter text | Up to 600 characters each |
+
+## Deliverables
+
+| Setting | What it does | Default |
+| --- | --- | --- |
+| Photo selection reminder | A booking still waiting on the client's photo selection this long after the gallery was delivered is flagged | 14 days |
+| Default delivery turnaround | Used for a deliverable type until you set its own | 120 days |
+
+## Editing
+
+Shown only while Editing is switched on for the studio. See [Editing workspace](/how-to/editing-workspace).
+
+| Setting | What it does | Default |
+| --- | --- | --- |
+| Review required | On: an editor sends a task for review and the studio approves it. Off: the Reviewing column is gone and editors complete their own tasks | On |
+| Flag work waiting for review | Work in Reviewing and not looked at for this long is flagged to the booking's admin | 2 days |
+| Flag work not started | A task still in To do this long after its booking reached Editing is flagged | 7 days |
+| Tell editors work is due soon | Editors see their own tasks due within this many days above the board | 14 days |
+
+## Fixed rules that are not settings
+
+These are the same for every studio.
+
+| Rule | Value |
+| --- | --- |
+| Events counted as urgent | Within 7 days |
+| Deposit flagged after quoting | 3 days |
+| A deliverable flagged as due soon | Within 14 days |
+| A ready physical item flagged as not collected | After 7 days |
+| A withdrawal counted as late | Less than 48 hours before the event |
+| Reminders by hand | At most one an hour per place |
+| Invitation links | Work for 7 days |
+| Sign-in codes | Expire after 10 minutes |
+| Files on a booking | 10 of up to 10 MB each, images and PDF |
+| Times | Shown in Singapore time |
+| Money | Singapore dollars |
+
+## Other settings pages
+
+| Page | Holds | Who |
+| --- | --- | --- |
+| Packages | Packages, their prices, events, crew, deliverables and add-ons. See [Package pricing modes](/reference/package-pricing-modes) | Owner, or admins with Packages and add-ons |
+| Event types | The kinds of event the studio shoots, for example Nikah, Reception, Pre-wedding | Owner, or admins with Lists |
+| Deliverable types | What the studio hands over, for example Photo gallery, Album, Highlight film, each with what it waits on and its turnaround | Owner, or admins with Lists |
+| Crew roles and levels | The disciplines (for example Photographer, Videographer) and levels (for example Lead, Second, Third) | Owner, or admins with Lists |
+| Lost reasons | Why an enquiry did not convert, for example Price, Date unavailable | Owner, or admins with Lists |
+| Vendor types | Make-up artist, Decor, Catering and so on, for the vendors on a booking | Owner, or admins with Lists |
+| Booking sections | Which parts of a booking the studio uses: Song list, Group shots, Vendors, Coverage brief, Files, Client meetings, Deliverables. Off hides the section and blocks saving to it; the data stays | Owner only |
+| Admin permissions | The switches in Roles | Owner only |
+| Editing (in the sidebar switcher, not under Settings) | The editing board, when Editing is switched on for the studio | Owners and admins; editors see only this |
+| Messages (in the sidebar, not under Settings) | The message templates, when Message templates is switched on for the studio | Owner, or admins with Studio settings |
+
+A new studio starts with event types (Nikah, Reception, Henna, ROM, Pre-wedding), crew roles (Photographer, Videographer), levels (Lead, Second, Third), lost reasons (Price, Date unavailable, No reply, Booked elsewhere) and vendor types already filled in. Lists can be archived rather than deleted, so old bookings keep their labels.

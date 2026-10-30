@@ -1,0 +1,59 @@
+---
+title: "Needs attention"
+description: "The home screen for owners and admins: only things that need a person to act, most urgent first."
+---
+
+Needs attention is the home screen for owners and admins. It lists only things that need a person to act, most urgent first, and is empty when nothing is wrong.
+
+<Note>
+Last checked: 30 October 2026, Zorlo release 2. Owners and admins.
+</Note>
+
+![The owner's view: every item in the studio, Urgent first.](/images/attention-owner.png)
+
+## Read the panel
+
+Each row is one problem: what is wrong, its priority, which booking, how soon or how late, and one button that goes straight to the fix. Click anywhere else on the row to open the booking. On a narrow screen the rows become cards.
+
+- **Urgent** (red): an event within 7 days with a crew problem or missing details, money overdue, a withdrawal, crew waiting to reconfirm, or a deliverable past its due date.
+- **Soon** (amber): things to deal with this week.
+
+The sidebar badge counts your items.
+
+## Act on each kind of item
+
+| Item | Button | What it does |
+| --- | --- | --- |
+| N crew places to fill | Assign | Opens the event's crew panel so you can offer the places |
+| Name hasn't replied to the offer | Send reminder | Emails the person again, at most once an hour |
+| N offers not answered | Assign | Opens the crew panel |
+| Name hasn't replied after a reminder | Send reminder | Emails them again |
+| Name withdrew | Assign | Opens the crew panel to fill the place |
+| Name to reconfirm the new time | Send reminder | Reminds them to confirm the changed event |
+| A clash, for example "Hafiz is on another event until 4pm" | Assign | Opens the crew panel so you can swap the person |
+| No venue, No times | Edit event | Opens the event to fill in what is missing |
+| Bride's side address missing | Edit event | Opens the event's getting-ready stops |
+| Deposit not received | Log payment | Opens the booking's payment form |
+| Balance of \$X not received | Log payment | Opens the booking's payment form |
+| Follow up, or No activity for N days | Open | Opens the enquiry |
+| Coverage brief not received, Song list not received | Open | Opens the booking so you can send or chase the form |
+| Client changes to check | Open | Opens the booking's Client forms section |
+| Gallery due soon, Highlight film overdue, Album ready to deliver, Album ready not collected, Photo selection not received | Open | Opens the booking at its Deliverables section |
+| Reply to your offer | Reply | For staff who shoot: opens your own job |
+| Add your phone number | My details | Crew message the coordinator on WhatsApp, so your number is needed |
+
+Items disappear on their own once the problem is fixed. There is nothing to tick off.
+
+With message templates on, items that have a matching template also show a small **Copy message** icon: Deposit not received opens the payment reminder, Coverage brief not received the brief request, and so on. See [Messages](/how-to/messages).
+
+## See everyone's items (admins)
+
+An admin sees the bookings assigned to them. Use **Show** at the top and pick **All** to see every booking's items, your own first. The owner always sees everything.
+
+## The morning email
+
+At 8am Singapore time each day with an Urgent item, Zorlo emails the list: the owner gets every booking's items, each admin gets their own bookings'. No email on quiet days. It is a copy of the panel, not a separate list.
+
+## Why something is or is not showing
+
+The exact rules and time windows are in [Needs attention rules](/reference/needs-attention-rules). The windows that can be changed (flag unfilled crew, reminder hours, follow-up days, the brief, song list and photo selection reminders) are in Settings, Studio. How the panel is designed to behave is in [How the attention panel decides what to show](/explanation/attention-panel).

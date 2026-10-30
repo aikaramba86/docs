@@ -1,0 +1,51 @@
+---
+title: "Deliverable statuses"
+description: "Every status a deliverable can have, how its due date is worked out, and what Needs attention says about it."
+---
+
+Every status a deliverable can have, how its due date is worked out, and what Needs attention says about it.
+
+<Note>
+Last checked: 30 October 2026, Zorlo release 2.
+</Note>
+
+## The statuses
+
+| Status | Means | Set by | Counts as done |
+| --- | --- | --- | --- |
+| Not started | Nobody has begun | A new deliverable that waits on nothing | No |
+| Waiting on client | Waiting for the song list (films) or the photo selection (album, frames) | A new deliverable whose type waits on one of them. Left only when the input arrives | No |
+| In progress | Being edited | By hand | No |
+| Ready | Finished, waiting to be sent or collected | By hand | A physical item: yes, it now waits on the client. A digital item: no, it still needs delivering |
+| Delivered | Sent to the client, with the delivery link | By hand, asked for the link | Yes |
+| Collected | Picked up by the client. Physical items only | By hand | Yes |
+
+## Rules
+
+- **Waiting ends only with the input.** A film leaves Waiting on client when the booking's song list is saved, by staff or by the client's form. An album or frames leave it when staff click Mark received. No other move out of Waiting is allowed, and nothing can be put back to Waiting by hand.
+- **Collected is for physical items.** Digital items end at Delivered.
+- **Due date.** Waits on nothing: the main event's date plus the type's turnaround. Waits on an input: the day the input arrived plus the turnaround. Until then, no date. The turnaround is the type's own, or the studio's Default delivery turnaround (120 days).
+- **Due dates follow the booking** when the main event moves, unless the date was set by hand.
+- **A cancelled booking's deliverables are locked** until it is reopened.
+- **Removing an item** offers Undo, which puts it back exactly as it was.
+- **The booking's status never moves** because of a deliverable. Shot, Editing and Delivered are set by hand.
+- **Crew never see deliverables.** The assignee gets no extra access either; it is a label for the studio.
+
+## Order on the booking
+
+Open items by due date, those with no date last. Then delivered and collected items. Then items parked by a cancellation.
+
+## Needs attention
+
+For the booking's assigned admin, while the booking is Confirmed, Shot, Editing or Delivered:
+
+| Item | Priority | When |
+| --- | --- | --- |
+| "Highlight film overdue" | Urgent | The due date has passed and the item is not done |
+| "Gallery due soon" | Soon | Due within 14 days |
+| "Highlight film ready to deliver" | Soon | A digital item at Ready, not yet overdue |
+| "Album ready, not collected" | Soon | A physical item at Ready for 7 days or more |
+| "Song list not received" | Soon | A film is waiting on the song list and the main event was Flag a missing song list days ago (default 7) |
+| "Photo selection not received" | Soon | An album or frames wait on the selection and the gallery was delivered Photo selection reminder days ago (default 14) |
+
+Each opens the booking at its Deliverables section.

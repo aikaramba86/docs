@@ -1,0 +1,108 @@
+---
+title: "Needs attention rules"
+description: "Every rule the Needs attention panel checks, with its priority, the time window and the setting that controls it."
+---
+
+Every rule the Needs attention panel checks, with its priority, the time window and the setting that controls it. The panel is worked out fresh every time it loads, so an item disappears as soon as its problem is fixed.
+
+<Note>
+Last checked: 30 October 2026, Zorlo release 2.
+</Note>
+
+**Urgent** means an event within 7 days, money overdue or a deliverable overdue. **Soon** means something to deal with this week. Urgent items are also emailed each morning (see [Emails Zorlo sends](/reference/emails)).
+
+## Crew on upcoming events
+
+| Item | Priority | When | Action button |
+| --- | --- | --- | --- |
+| "N crew places to fill" (open or declined places) | Urgent within 7 days, Soon within the flag window | Event within 7 days, or within "Flag unfilled crew" (default 15 days) | Assign |
+| "Name hasn't replied to the offer" | Urgent | Event within 7 days and one offer unanswered | Send reminder |
+| "N offers not answered" | Urgent | Event within 7 days and several offers unanswered | Assign |
+| "Name hasn't replied after a reminder" | Soon | Event further out, reminder sent, and "Then flag the admin after" hours (default 24) have passed with no reply | Send reminder |
+| "Name withdrew" (with "less than 48 hours before" when late) | Urgent | Any upcoming event with a withdrawn place | Assign |
+| "Name to reconfirm the new time" or "N crew to reconfirm the new time" | Urgent | Any upcoming event with a place awaiting reconfirmation | Send reminder, or Assign |
+| A clash sentence, for example "Hafiz is on another event until 4pm" | Urgent | Event within 7 days and a person offered, confirmed or reconfirming is busy at that time | Assign |
+
+## Event details
+
+| Item | Priority | When | Action button |
+| --- | --- | --- | --- |
+| "No venue", "No times", "No start time", "No end time" | Urgent | Event within 7 days with the detail missing | Edit event |
+| "Bride's side address missing" or "Groom's side address missing" | Urgent | Event within 7 days, a getting-ready stop with crew on it and no address | Edit event |
+
+## Money
+
+| Item | Priority | When | Action button |
+| --- | --- | --- | --- |
+| "Deposit not received" | Urgent | Booking is Enquiry, Quoted or Confirmed, no deposit logged, deposit not 0, and an event within 7 days | Log payment |
+| "Deposit not received" | Soon | Booking is Quoted, no deposit logged, and 3 or more days since it was quoted | Log payment |
+| "Balance of \$X not received" | Urgent | Booking is Confirmed or later, the balance due date has passed, and the payments logged come to less than the agreed price | Log payment |
+
+## Enquiries
+
+| Item | Priority | When | Action button |
+| --- | --- | --- | --- |
+| "Follow up" | Soon | Enquiry or Quoted with a follow-up date that has arrived or passed | Open |
+| "No activity for N days" | Soon | Enquiry or Quoted with no follow-up date and no notes or changes for "Follow up enquiries after" days (default 3) | Open |
+
+A follow-up date still ahead means you chose to wait, so nothing is shown until then.
+
+## Client forms
+
+Only while Client forms is switched on for the studio, and only for the booking sections the studio uses.
+
+| Item | Priority | When | Action button |
+| --- | --- | --- | --- |
+| "Coverage brief not received" | Soon | Booking is Confirmed, its main event is within "Flag a missing brief" days (default 14), and no brief has arrived: no brief form sent back and nothing typed in by staff | Open |
+| "Song list not received" | Soon | A song list link was sent, the main event was "Flag a missing song list" days ago or more (default 7), and the booking has no songs. With the Deliverables section on, the deliverables rule below replaces this one | Open |
+| "Client changes to check" | Soon | A client's form gave a different value from the booking's, and nobody has chosen yet. Counts the changes | Open |
+
+## Deliverables
+
+Only while the Deliverables section is on, and for bookings that are Confirmed, Shot, Editing or Delivered.
+
+| Item | Priority | When | Action button |
+| --- | --- | --- | --- |
+| "Highlight film overdue" | Urgent | The item's due date has passed and it is not delivered or collected (a physical item at Ready is not overdue) | Open |
+| "Gallery due soon" | Soon | Due within 14 days | Open |
+| "Highlight film ready to deliver" | Soon | A digital item is at Ready and not overdue | Open |
+| "Album ready, not collected" | Soon | A physical item has been at Ready for 7 days or more | Open |
+| "Song list not received" | Soon | A film is waiting on the song list and the main event was "Flag a missing song list" days ago or more (default 7) | Open |
+| "Photo selection not received" | Soon | An album or frames wait on the photo selection and the gallery was delivered "Photo selection reminder" days ago or more (default 14) | Open |
+
+## Editing
+
+Only while Editing is switched on for the studio, for bookings at Editing or later. The deliverable items above stay as they are. See [Editing workspace](/how-to/editing-workspace).
+
+| Item | Priority | When | Action button |
+| --- | --- | --- | --- |
+| "Highlight film waiting for review" | Soon | In Reviewing for "Flag work waiting for review" days or more (default 2) | Open card |
+| "Highlight film waiting for review" | Urgent | In Reviewing and the item is due within 3 days or late | Open card |
+| "Photo gallery not started" | Soon | In To do with nobody assigned, or still in To do "Flag work not started" days after the booking reached Editing (default 7) | Open card |
+| "Album unassigned" | Soon | Any open task with nobody assigned 2 days after it was made | Open card |
+
+## Personal items
+
+| Item | Priority | Who sees it |
+| --- | --- | --- |
+| "Reply to your offer" or "Reconfirm the new time for your place" | Urgent within 7 days, else Soon | An owner or admin who also shoots, for their own places |
+| "Add your phone number" | Soon | An owner or admin whose account has no phone number, because crew message the coordinator on WhatsApp |
+| "Highlight film overdue" or "Highlight film due in N days" | Urgent when late, else Soon | An editor, above the board, for their own tasks: late, or due within "Tell editors work is due soon" days (default 14) |
+| "Changes requested on Highlight film" | Urgent | An editor whose task was sent back. Replaces the due line for that task |
+| "Song list arrived for Highlight film" or "Photo selection arrived for Album" | Soon | An editor whose task left Waiting on client in the last 7 days and is still in To do |
+
+## Who sees what
+
+- The owner sees every item.
+- An admin sees the items for the bookings assigned to them. The "Show: Mine / All" switch at the top shows everyone's, their own first.
+- Personal items are shown only to the person they are for.
+- Shooters do not have a Needs attention panel. Their requests appear under Requests on My events.
+- Editors see only their own items, above the board.
+
+## Order
+
+Urgent before Soon, then by the date that matters (the event date, the due date, or how long ago the last activity was), soonest first.
+
+## Not yet
+
+Rules about crew hours and payouts arrive with those features in a later release.
