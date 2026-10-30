@@ -60,13 +60,7 @@
           "reference/emails",
           "reference/package-pricing-modes",
           "reference/platform-console",
-          "reference/editing-task-statuses",
-          {
-            "group": "Reference",
-            "pages": [
-              "test"
-            ]
-          }
+          "reference/editing-task-statuses"
         ],
         "expanded": true
       },
