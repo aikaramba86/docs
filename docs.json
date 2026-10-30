@@ -111,7 +111,7 @@
   },
   "description": "User guide for Zorlo, the studio management app for photography and videography studios.",
   "appearance": {
-    "default": "dark",
+    "default": "light",
     "strict": false
   }
 }
